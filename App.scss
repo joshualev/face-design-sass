@@ -1,0 +1,300 @@
+.josh {
+  --skin: #eed3ad;
+  --skin-dark: #ecc6a9;
+  --hair: #5a3825;
+  --hair-dark: #3d2314;
+  --hair-semi: #5a3825;
+  --eye: rgb(152, 198, 239);
+  --eye-dark: rgb(3, 120, 197);
+
+  --lips: #eec1ad;
+  --lips-dark: #dbac98;
+
+  --line-light: #fff1;
+  --line-light2: #fff2;
+  --line-dark: #0001;
+  --line-dark2: #0002;
+
+  width: 80vmin;
+  aspect-ratio: 1;
+  position: relative;
+  background: // HAIR
+    radial-gradient(farthest-side, var(--hair) 99%, #0000 99.9%) 21.75% 25% /
+      20% 35%,
+    radial-gradient(farthest-side, var(--hair) 99%, #0000 99.9%) 78% 23% / 20%
+      40%,
+    // EARS
+    radial-gradient(farthest-side, var(--skin-dark) 99.5%, #0000 99.9%) 20.75%
+      40% / 22% 28%,
+    radial-gradient(farthest-side, var(--skin-dark) 99.5%, #0000 99.9%) 78.25%
+      40% / 22% 28%,
+    // NECK
+    radial-gradient(62% 48%, var(--skin-dark) 99%, #0000 99.9%) 50.5% 72.5% /
+      28.5% 30%,
+    radial-gradient(100% 200% at 0 0, #0000 30%, blue 0) 38% 105% / 28% 35%,
+    radial-gradient(100% 200% at 100% 0, #0000 30%, blue 0) 60% 109% / 28% 40%,
+    // SHOULDERS
+    radial-gradient(120% 135% at 50% 100%, blue 40%, #0000 0) 50% 100% / 100%
+      30%;
+  background-repeat: no-repeat;
+}
+
+.josh::before {
+  content: "";
+  position: absolute;
+  width: 59%;
+  height: 77.5%;
+  background: var(--skin);
+  border-radius: 100% / 100% 100% 160% 160%;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  background: //EYE 1
+    radial-gradient(
+        circle,
+        #000 24%,
+        var(--eye) 28% 40%,
+        var(--eye-dark) 66%,
+        #0000 67%
+      )
+      75.6% 45% / 14% 10%,
+    radial-gradient(farthest-side at 50% 100%, #f8f8f8 98%, #0000 99.9%) 80% 44% /
+      24% 10%,
+    radial-gradient(farthest-side, #f8f8f8 98%, #0000 99.9%) 80% 49% / 24% 3%,
+    //EYE 2
+    radial-gradient(
+        circle,
+        #000 24%,
+        var(--eye) 28% 40%,
+        var(--eye-dark) 66%,
+        #0000 67%
+      )
+      23.5% 45% / 14% 10%,
+    radial-gradient(farthest-side at 50% 100%, #f8f8f8 98%, #0000 99.9%) 20% 44% /
+      24% 10%,
+    radial-gradient(farthest-side, #f8f8f8 98%, #0000 99.9%) 20% 49% / 24% 3%,
+    //EYEBROWS
+    radial-gradient(20% 12.5% at 26% 48%, var(--skin) 99%, #0000 99.9%),
+    radial-gradient(17% 12% at 26% 44%, var(--hair) 99%, #0000 99.9%),
+    radial-gradient(20% 12.5% at 74% 48%, var(--skin) 99%, #0000 99.9%),
+    radial-gradient(17% 12% at 74.5% 44%, var(--hair) 99%, #0000 99.9%),
+    // NOSE
+    radial-gradient(80% 125% at 50% -40%, #0000 80%, #000 0 85%, #0000 86%) 50%
+      66.55% / 6.2% 3%,
+    radial-gradient(farthest-side at 50% 0, #000 98%, #0000 99.9%) 55.5% 66% /
+      4% 0.75%,
+    radial-gradient(farthest-side at 50% 100%, #000 98%, #0000 99.9%) 55% 65.5% /
+      4% 0.5%,
+    radial-gradient(farthest-side at 50% 0, #000 98%, #0000 99.9%) 44.5% 66% /
+      4% 0.75%,
+    radial-gradient(farthest-side at 50% 100%, #000 98%, #0000 99.9%) 45% 65.5% /
+      4% 0.5%,
+    radial-gradient(
+        farthest-side at 90% 60%,
+        #0000 90%,
+        #000 0 99%,
+        #0000 99.9%
+      )
+      40% 63.5% / 5% 6%,
+    radial-gradient(farthest-side at 5% 60%, #0000 90%, #000 0 99%, #0000 99.9%)
+      60% 63.5% / 5% 6%,
+    // MOUTH CLOSED
+    // radial-gradient(100% 240% at 0% -15%, #0000 35%, #0002 36% 39.5%, #0000 39%)
+    //   72.5% 79.7% / 20% 2%,
+    // radial-gradient(100% 240% at 100% -15%, #0000 35%, #0002 36% 40%, #0000 39%)
+    //   27.5% 79.7% / 20% 2%,
+    // radial-gradient(90% 120% at 50% -15%, var(--lips) 35%, #0000 39%) 50% 77.5% /
+    //   15% 1.5%,
+    // radial-gradient(90% 90% at 50% 1%, var(--lips) 35%, #0000 0) 50% 104.5% /
+    //   50% 25%,
+    // radial-gradient(farthest-side at 48% 100%, var(--lips) 90%, #0000 9%) 44%
+    //   78% / 23% 3%,
+    // radial-gradient(farthest-side at 52% 100%, var(--lips) 90%, #0000 91%) 56%
+    //   78% / 23% 3%,
+    // /* shadows */ radial-gradient(50% 50% at 10% 90%, var(--skin-dark), #0000) 0
+    //   100% / 80% 80%,
+    // radial-gradient(50% 50% at 90% 90%, var(--skin-dark), #0000) 100% 100% / 80%
+    //   80%,
+    //MOUTH SMILING
+    radial-gradient(100% 240% at 0% -15%, #0000 35%, #0002 36% 37%, #0000 39%)
+      73% 78.75% / 20% 2%,
+    radial-gradient(100% 240% at 100% -15%, #0000 35%, #0002 36% 38%, #0000 39%)
+      27% 78.75% / 20% 2%,
+    radial-gradient(90% 120% at 50% -15%, var(--lips) 35%, #0000 39%) 50% 77.5% /
+      15% 1.5%,
+    radial-gradient(50% 100% at 50% 0%, #f8f8f8 35%, #0000 36%) 50% 90% / 89%
+      15%,
+    radial-gradient(90% 120% at 50% 1%, var(--lips) 35%, #0000 0) 50% 102% / 50%
+      25%,
+    radial-gradient(farthest-side at 48% 100%, var(--lips) 90%, #0000 91%) 44%
+      76% / 23% 3%,
+    radial-gradient(farthest-side at 52% 100%, var(--lips) 90%, #0000 91%) 56%
+      76% / 23% 3%,
+    radial-gradient(89% 125% at 50% 1%, var(--lips-dark) 34%, #0000 35%) 50%
+      102% / 50% 25%,
+    //SHADOWS
+    radial-gradient(50% 50% at 10% 90%, var(--skin-dark), #0000) 0 100% / 80%
+      80%,
+    radial-gradient(50% 50% at 90% 90%, var(--skin-dark), #0000) 100% 100% / 80%
+      80%,
+    linear-gradient(var(--skin-dark), #0000 35%),
+    linear-gradient(var(--skin-dark), #0000 35%), var(--skin);
+
+  background-repeat: no-repeat;
+}
+
+.josh::after {
+  content: "";
+  position: absolute;
+  width: 64%;
+  height: 100%;
+  left: 48.85%;
+  top: -2%;
+  transform: translateX(-50%) rotate(4deg);
+  border-radius: 100% / 70% 65% 30% 20%;
+  background: //HAIR SHADOW
+    radial-gradient(50% 40% at -10% -10%, var(--hair-semi), #0000),
+    radial-gradient(50% 40% at 105% -5%, var(--hair-semi), #0000),
+    radial-gradient(farthest-side at 50% 100%, #0000 50%, var(--hair-semi) 200%)
+      50% 0 / 150% 20%,
+    //HAIR
+    /* bangs */ linear-gradient(var(--hair) 12%, #0000 0),
+    radial-gradient(
+        100% 32% at 0 0,
+        #0000 94%,
+        var(--line-dark) 0 94.5%,
+        #0000 0 96.5%
+      )
+      0 0 / 50% 120%,
+    radial-gradient(
+        100% 32% at 0 0,
+        #0000 94%,
+        var(--line-dark) 0 94.5%,
+        #0000 0 96.5%
+      )
+      10% 10% / 40% 120%,
+    radial-gradient(
+        100% 32% at 0 0,
+        #0000 94%,
+        var(--line-light) 94.5%,
+        #0000 0 96.5%
+      )
+      10% 10% / 43% 120%,
+    radial-gradient(
+        100% 32% at 100% 0,
+        #0000 92%,
+        var(--line-dark2) 93%,
+        #0000 0 96.5%
+      )
+      70% 28% / 20% 40%,
+    radial-gradient(
+        100% 32% at 100% 0,
+        #0000 92%,
+        var(--line-light2) 93%,
+        #0000 0 96.5%
+      )
+      70% 28% / 15% 30%,
+    radial-gradient(
+        100% 32% at 100% 0,
+        #0000 92%,
+        var(--line-dark2) 92.7%,
+        #0000 0 96.5%
+      )
+      90% 28% / 20% 45%,
+    radial-gradient(
+        100% 32% at 100% 0,
+        #0000 92%,
+        var(--line-light) 93%,
+        #0000 0 96.5%
+      )
+      88% 28% / 20% 30%,
+    radial-gradient(
+        farthest-side at 50% 100%,
+        #0000 90%,
+        var(--line-light) 90.5%,
+        #0000 0
+      )
+      0 0 / 100% 30%,
+    radial-gradient(
+        farthest-side at 50% 100%,
+        #0000 90%,
+        var(--line-dark2) 90.5%,
+        #0000 0
+      )
+      50% 0 / 104% 31%,
+    radial-gradient(
+        farthest-side at 50% 100%,
+        #0000 90%,
+        var(--line-dark) 91%,
+        #0000 0
+      )
+      45% 0 / 95% 29%,
+    radial-gradient(
+        50% 100% at 50% 100%,
+        #0000 90%,
+        var(--line-dark) 91%,
+        #0000 0
+      )
+      42% 0 / 95% 35%,
+    radial-gradient(
+        21% 100% at 50% 60%,
+        #0000 90%,
+        var(--line-dark) 91%,
+        #0000 0
+      )
+      225% 1% / 90% 27%,
+    radial-gradient(100% 32% at 0 0, var(--hair) 96%, #0000 96.5%) 0 0 / 50%
+      120%,
+    radial-gradient(50% 33% at 100% 0, var(--hair) 96%, #0000 96.5%),
+    radial-gradient(
+        90% 65% at -5% 35%,
+        #0000 100.1%,
+        var(--hair) 100.5% 110%,
+        #0000 110.5%
+      )
+      39% 0% / 15% 30%,
+    radial-gradient(
+        51% 145% at -20% 50%,
+        #0000 45%,
+        var(--hair) 45.5% 48.5%,
+        #0000 49%
+      )
+      76% 0% / 39% 34%,
+    radial-gradient(
+        60% 80% at 100% 24%,
+        #0000 95%,
+        var(--hair) 95.5% 110%,
+        #0000 110.5%
+      )
+      75% 0% / 30% 30%,
+    radial-gradient(
+        60% 65% at 100% 35%,
+        #0000 105%,
+        var(--hair) 105.5% 110%,
+        #0000 110.5%
+      )
+      58.5% -1% / 25% 31%,
+    radial-gradient(
+        62% 74% at 100% 25%,
+        #0000 103%,
+        var(--hair) 103.5% 110%,
+        #0000 110.5%
+      )
+      60% 0% / 27% 30%,
+    radial-gradient(
+        farthest-side at 100% 0,
+        #0000 60%,
+        var(--hair) 0 99.8%,
+        #0000 99.9%
+      )
+      65% 0 / 22% 30.075%,
+    radial-gradient(
+        100% 105% at 100% 40%,
+        #0000 60%,
+        var(--hair) 60.5% 99.3%,
+        #0000 99.9%
+      )
+      55% -1% / 13% 31%;
+
+  background-repeat: no-repeat;
+}
